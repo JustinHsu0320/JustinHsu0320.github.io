@@ -32,49 +32,70 @@
                     <dt>Birth</dt>
                     <dd>1990-03-20</dd>
                     <dt>Seniority</dt>
-                    <dd>4 years↑</dd>
+                    <dd id="seniority">
+                        <script>
+                            var from = new Date('2014/06/15 00:00:00').getTime();
+                            var now = new Date().getTime();
+                            var seniority = Number.parseFloat((now-from)/1000/86400/365).toFixed(1);
+                            document.querySelector("#seniority").innerHTML = seniority + "  years";
+                        </script>
+                    </dd>
                 </dl>
             </div>
             <div class="social-box">
                 <ul class="intro">
                     <li>
-                      <a href="https://github.com/JustinHsu0320" class="github" title="github" targer="_blank">
-                        <svg viewbox="0 0 512 512">
-                          <path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/>
-                        </svg>
-                      </a>
+                        <a href="https://github.com/JustinHsu0320" class="github" title="github" targer="_blank">
+                            <svg viewbox="0 0 512 512">
+                            <path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/>
+                            </svg>
+                        </a>
+                        </li>
+                        <li>
+                        <a href="https://codepen.io/JustinHsu/" class="icon-4 codepen" title="codepen" targer="_blank">
+                            <svg viewbox="0 0 512 512">
+                            <path d="M427 201.9c-0.6-4.2-2.9-8-6.4-10.3L264.2 87.3c-4.9-3.3-11.4-3.3-16.3 0L91.4 191.6c-4 2.7-6.5 7.4-6.5 12.2v104.3c0 4.8 2.5 9.6 6.5 12.2l156.4 104.3c4.9 3.3 11.4 3.3 16.3 0L420.6 320.4c4-2.6 6.6-7.4 6.6-12.2V203.9C427.1 203.2 427.1 202.6 427 201.9 427 201.7 427.1 202.6 427 201.9zM270.7 127.1l115.2 76.8 -51.5 34.4 -63.8-42.7V127.1zM241.3 127.1v68.6l-63.8 42.7 -51.5-34.4L241.3 127.1zM114.3 231.4l36.8 24.6 -36.8 24.6V231.4zM241.3 384.9L126.1 308.1l51.5-34.4 63.8 42.6V384.9zM256 290.8l-52-34.8 52-34.8 52 34.8L256 290.8zM270.7 384.9V316.3l63.8-42.6 51.5 34.4L270.7 384.9zM397.7 280.6l-36.8-24.6 36.8-24.6V280.6z"/>
+                            </svg>
+                        </a>
                     </li>
                     <li>
-                      <a href="https://codepen.io/JustinHsu/" class="icon-4 codepen" title="codepen" targer="_blank">
-                        <svg viewbox="0 0 512 512">
-                          <path d="M427 201.9c-0.6-4.2-2.9-8-6.4-10.3L264.2 87.3c-4.9-3.3-11.4-3.3-16.3 0L91.4 191.6c-4 2.7-6.5 7.4-6.5 12.2v104.3c0 4.8 2.5 9.6 6.5 12.2l156.4 104.3c4.9 3.3 11.4 3.3 16.3 0L420.6 320.4c4-2.6 6.6-7.4 6.6-12.2V203.9C427.1 203.2 427.1 202.6 427 201.9 427 201.7 427.1 202.6 427 201.9zM270.7 127.1l115.2 76.8 -51.5 34.4 -63.8-42.7V127.1zM241.3 127.1v68.6l-63.8 42.7 -51.5-34.4L241.3 127.1zM114.3 231.4l36.8 24.6 -36.8 24.6V231.4zM241.3 384.9L126.1 308.1l51.5-34.4 63.8 42.6V384.9zM256 290.8l-52-34.8 52-34.8 52 34.8L256 290.8zM270.7 384.9V316.3l63.8-42.6 51.5 34.4L270.7 384.9zM397.7 280.6l-36.8-24.6 36.8-24.6V280.6z"/>
+                        <a href="https://www.facebook.com/howareu520" class="icon-17 facebook" title="facebook">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                            <g>
+                            <g>
+                                <path d="M452,0H60C26.916,0,0,26.916,0,60v392c0,33.084,26.916,60,60,60h392c33.084,0,60-26.916,60-60V60
+                                C512,26.916,485.084,0,452,0z M472,452c0,11.028-8.972,20-20,20H338V309h61.79L410,247h-72v-43c0-16.975,13.025-30,30-30h41v-62
+                                h-41c-50.923,0-91.978,41.25-91.978,92.174V247H216v62h60.022v163H60c-11.028,0-20-8.972-20-20V60c0-11.028,8.972-20,20-20h392
+                                c11.028,0,20,8.972,20,20V452z"/>
+                            </g>
+                            </g>
                         </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.facebook.com/howareu520" class="icon-17 facebook" title="facebook">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                          viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                        <g>
-                          <g>
-                            <path d="M452,0H60C26.916,0,0,26.916,0,60v392c0,33.084,26.916,60,60,60h392c33.084,0,60-26.916,60-60V60
-                              C512,26.916,485.084,0,452,0z M472,452c0,11.028-8.972,20-20,20H338V309h61.79L410,247h-72v-43c0-16.975,13.025-30,30-30h41v-62
-                              h-41c-50.923,0-91.978,41.25-91.978,92.174V247H216v62h60.022v163H60c-11.028,0-20-8.972-20-20V60c0-11.028,8.972-20,20-20h392
-                              c11.028,0,20,8.972,20,20V452z"/>
-                          </g>
-                        </g>
-                      </svg>
-                      </a>
+                        </a>
                     </li>
                 </ul>
             </div>
             <div class="box">
                 <h3 class="title">Skills</h3>
                 <div class="skills">
+                    <h4>DevOps</h4>
+                    <ul>
+                        <li><span class="fill seven"></span><b>Docker (Machine, Compose)</b></li>
+                        <li><span class="fill five"></span><b>Kubernetes 1.13</b></li>
+                        <li><span class="fill seven"></span><b>Drone CICD 1.0</b></li>
+                        <li><span class="fill five"></span><b>AWS (Route53 > CloudFront > (ELB > EC2 || S3)、APIGateway)</b></li>
+                        <li><span class="fill five"></span><b>Heroku, Digital Ocean</b></li>
+                        <li><span class="fill seven"></span><b>Microservices</b></li>
+                        <li><span class="fill seven"></span><b>Kong (API Gateway)</b></li>
+                        <li><span class="fill three"></span><b>ELK</b></li>
+                        <li><span class="fill seven"></span><b>Linux (CentOS, Ubuntu)</b></li>
+                        <li><span class="fill five"></span><b>Nginx, Apache</b></li>
+                    </ul>
+                    <br>
                     <h4>Backend</h4>
                     <ul>
-                        <li><span class="fill seven"></span><b>Golang 1.11</b></li>
-                        <li><span class="fill nine"></span><b>PHP 7.2 (Laravel 5.7)</b></li>
+                        <li><span class="fill seven"></span><b>Golang 1.13 (Gin, Go-Micro)</b></li>
+                        <li><span class="fill nine"></span><b>PHP 7.2 (Laravel 5.2~6.2)</b></li>
                         <li><span class="fill seven"></span><b>Node.js (Express.js, koa.js)</b></li>
                         <li><span class="fill three"></span><b>Python 3.6</b></li>
                         <li><span class="fill nine"></span><b>Restful API</b></li>
@@ -83,33 +104,22 @@
                         <li><span class="fill seven"></span><b>ORM (gorm, eloquent, sequelize.js)</b></li>
                         <li><span class="fill five"></span><b>MongoDB</b></li>
                         <li><span class="fill five"></span><b>ODM (Mongoose)</b></li>
+                        <li><span class="fill seven"></span><b>Firebase (Databases, Authentication)</b></li>
                         <li><span class="fill seven"></span><b>Redis</b></li>
                         <li><span class="fill seven"></span><b>Testing (PHPUnit)</b></li>
                     </ul>
-                    <h4>DevOps</h4>
-                    <ul>
-                        <li><span class="fill seven"></span><b>Docker (Machine, Compose)</b></li>
-                        <li><span class="fill five"></span><b>AWS (Route53 > CloudFront > (ELB > EC2 || S3)、ElasticSearch、APIGateway)</b></li>
-                        <li><span class="fill five"></span><b>Heroku, Digital Ocean</b></li>
-                        <li><span class="fill seven"></span><b>Firebase (Databases, Authentication)</b></li>
-                        <li><span class="fill seven"></span><b>Microservices</b></li>
-                        <li><span class="fill seven"></span><b>Kong (API Gateway)</b></li>
-                        <li><span class="fill seven"></span><b>Gitlab CI</b></li>
-                        <li><span class="fill three"></span><b>ELK</b></li>
-                        <li><span class="fill seven"></span><b>Linux (CentOS, Ubuntu)</b></li>
-                        <li><span class="fill three"></span><b>Nginx, Apache</b></li>
-                        <li><span class="fill five"></span><b>Ansible</b></li>
-                    </ul>
+                    <br>
                     <h4>Frontend</h4>
                     <ul>
                         <li><span class="fill seven"></span><b>Javascript (es6+)</b></li>
                         <li><span class="fill seven"></span><b>Vue.js 3.0, Nuxt.js</b></li>
                         <li><span class="fill five"></span><b>Angular.js 1.6</b></li>
                         <li><span class="fill seven"></span><b>jQuery</b></li>
-                        <li><span class="fill seven"></span><b>Bootstrap 3</b></li>
+                        <li><span class="fill seven"></span><b>Vuetify, Bootstrap 3</b></li>
                         <li><span class="fill seven"></span><b>HTML5 (Pug)</b></li>
                         <li><span class="fill three"></span><b>CSS3 (Sass, Scss)</b></li>
                     </ul>
+                    <br>
                     <h4>PM</h4>
                     <ul>
                         <li><span class="fill nine"></span><b>怡佳娛樂 - 第二屆華流之星 (2018/03-04)</b></li>
@@ -118,11 +128,14 @@
                         <li><span class="fill nine"></span><b>私立再興中學 - 再興生活Web-App (2016/05-08)</b></li>
                         <li><span class="fill nine"></span><b>超人氣娛樂 - 台灣達人秀 (2015/09-2016/04)</b></li>
                     </ul>
+                    <br>
                     <h4>Tools</h4>
                     <ul>
                         <li><span class="fill seven"></span><b>Agile Scrum</b></li>
                         <li><span class="fill five"></span><b>Jira</b></li>
                         <li><span class="fill seven"></span><b>Git</b></li>
+                        <li><span class="fill seven"></span><b>Postman</b></li>
+                        <li><span class="fill seven"></span><b>VSCode</b></li>
                     </ul>
                 </div>
             </div>
@@ -161,14 +174,14 @@
                 </h4>
             </div>
             <div class="box">
-                <h3 class="title">Work-Experience</h3>
-                <h4>HIERO7 禾新數位有限公司<span>【RD部門】資深程式設計師 | Aug 2018 - now </span></h4>
+                <h3 class="title">Experience</h3>
+                <h4 style="font-weight:bold;">HIERO7 禾新數位有限公司<span>【RD部門】資深程式設計師 | Aug 2018 - now </span></h4>
 
                 <ul>
                     <li>尊重保密協定，除商業邏輯須保密外，Open Sources 技術歡迎面談</li>
                 </ul>
 
-                <h4>三立電視股份有限公司<span>【研發中心】程式設計師 | Jun 2017 - Jul 2018 (1y2m)</span></h4>
+                <h4 style="font-weight:bold;">三立電視股份有限公司<span>【研發中心】程式設計師 | Jun 2017 - Jul 2018 (1y2m)</span></h4>
                 <ul>
                     <li>[<a target="_blank" href="http://www.settv.com.tw/#!/">三立電視官網</a>]<br/> <span>前後台開發維護 <b>(Laravel5.2, Angular1.2)</b></span>
                         <br>
