@@ -40,6 +40,8 @@
                             document.querySelector("#seniority").innerHTML = seniority + "  years";
                         </script>
                     </dd>
+                    <dt>Updated At</dt>
+                    <dd>2020-07-25</dd>
                 </dl>
             </div>
             <div class="social-box">
@@ -82,40 +84,46 @@
                     <ul>
                         <li><span class="fill seven"></span><b>Docker (Machine, Compose)</b></li>
                         <li><span class="fill five"></span><b>Kubernetes 1.13</b></li>
-                        <li><span class="fill seven"></span><b>Drone CICD 1.0</b></li>
-                        <li><span class="fill five"></span><b>AWS (Route53 > CloudFront > (ELB > EC2 || S3)、APIGateway)</b></li>
+                        <li><span class="fill seven"></span><b>Drone 1.0 (CI/CD)</b></li>
+                        <li><span class="fill five"></span><b>AWS</b></li>
                         <li><span class="fill five"></span><b>Heroku, Digital Ocean</b></li>
-                        <li><span class="fill seven"></span><b>Microservices</b></li>
+                        <li><span class="fill five"></span><b>Microservices (Go-Micro/Kit, Consul, gRPC)</b></li>
                         <li><span class="fill seven"></span><b>Kong (API Gateway)</b></li>
-                        <li><span class="fill three"></span><b>ELK</b></li>
-                        <li><span class="fill seven"></span><b>Linux (CentOS, Ubuntu)</b></li>
+                        <li><span class="fill three"></span><b>Traefik (Reverse Proxy, Load Balance)</b></li>
+                        <!-- <li><span class="fill three"></span><b>ELK</b></li> -->
+                        <li><span class="fill seven"></span><b>Linux (Ubuntu)</b></li>
                         <li><span class="fill five"></span><b>Nginx, Apache</b></li>
                     </ul>
                     <br>
                     <h4>Backend</h4>
                     <ul>
                         <li><span class="fill seven"></span><b>Golang 1.13 (Gin, Go-Micro)</b></li>
-                        <li><span class="fill nine"></span><b>PHP 7.2 (Laravel 5.2~6.2)</b></li>
-                        <li><span class="fill seven"></span><b>Node.js (Express.js, koa.js)</b></li>
+                        <li><span class="fill nine"></span><b>PHP 7.4 (Laravel 5-7)</b></li>
+                        <li><span class="fill seven"></span><b>Node.js (Express, Koa)</b></li>
                         <li><span class="fill three"></span><b>Python 3.6</b></li>
                         <li><span class="fill nine"></span><b>Restful API</b></li>
-                        <li><span class="fill five"></span><b>GraphQL</b></li>
+                        <li><span class="fill five"></span><b>GraphQL (Go: graphql-go)</b></li>
                         <li><span class="fill seven"></span><b>MySQL 5.7</b></li>
                         <li><span class="fill seven"></span><b>ORM (gorm, eloquent, sequelize.js)</b></li>
                         <li><span class="fill five"></span><b>MongoDB</b></li>
                         <li><span class="fill five"></span><b>ODM (Mongoose)</b></li>
-                        <li><span class="fill seven"></span><b>Firebase (Databases, Authentication)</b></li>
+                        <li><span class="fill seven"></span><b>GCP Firebase (Databases, Authentication)</b></li>
                         <li><span class="fill seven"></span><b>Redis</b></li>
                         <li><span class="fill seven"></span><b>Testing (PHPUnit)</b></li>
+                        <li><span class="fill five"></span><b>WebSocket (Go: gorilla/websocket)</b></li>
+                        <li><span class="fill five"></span><b>RabbitMQ (Go: streadway/amqp)</b></li>
+                        <li><span class="fill seven"></span><b>Crawler (Puppeteer.js)</b></li>
+                        <li><span class="fill seven"></span><b>JWT</b></li>
                     </ul>
                     <br>
                     <h4>Frontend</h4>
                     <ul>
                         <li><span class="fill seven"></span><b>Javascript (es6+)</b></li>
                         <li><span class="fill seven"></span><b>Vue.js 3.0, Nuxt.js</b></li>
+                        <li><span class="fill three"></span><b>WebAssembly (Go)</b></li>
                         <li><span class="fill five"></span><b>Angular.js 1.6</b></li>
                         <li><span class="fill seven"></span><b>jQuery</b></li>
-                        <li><span class="fill seven"></span><b>Vuetify, Bootstrap 3</b></li>
+                        <li><span class="fill seven"></span><b>Vuetify, Bootstrap 3, Bulma</b></li>
                         <li><span class="fill seven"></span><b>HTML5 (Pug)</b></li>
                         <li><span class="fill three"></span><b>CSS3 (Sass, Scss)</b></li>
                     </ul>
@@ -136,6 +144,8 @@
                         <li><span class="fill seven"></span><b>Git</b></li>
                         <li><span class="fill seven"></span><b>Postman</b></li>
                         <li><span class="fill seven"></span><b>VSCode</b></li>
+                        <li><span class="fill seven"></span><b>Sequel Ace</b></li>
+                        <li><span class="fill three"></span><b>Robo 3T</b></li>
                     </ul>
                 </div>
             </div>
@@ -145,18 +155,9 @@
 <p class="">(1) 預期公司文化<br>
 　　把員工當夥伴關係，全力以赴貢獻所學，擁有內部交流與自主學習時間、重視工作與生活、得以永續替公司製造價值與過程獲得成就感，與公司、夥伴們共同成長。
 </p>
-<p class="">(2) 棘手的工作經驗及解決方式<br style="margin-top: 8px;">
-　　發現deploy Laravel5.4至Server時, Nginx(rewrite)傳送URI給Laravel Route(Api/Web)出現mismatch。(因開發時URI是根目錄開發, 但deploy是Subdirectory)
-    研究20分鐘後未果，立馬回報組長 未解決> 回報經理 未解決> 回報副總，最後在多方會商下嘗試與成功！ (下次打算使用Laravel Homestead處理)
-    很珍惜這個過程，大家都無私的把自己已知的貢獻出來討論，不分你我、不分階級，共同為一件事情團結一心。
+<p class="">(2) 
 </p>
 <p class="">(3) 短中期目標 <br>
-　　Backend：資料庫語法效能調校<br>
-　　Cloud：AWS/GCP雲端服務的了解比較與應用、伺服器讀寫架構規畫<br>
-　　Server：Linux系統調校<br>
-　　Frontend：已熟悉Vue.js(較似前端Library)且自主學習Nuxt.js框架, 借以Node.js整合全端與適應SSR(Universal APP)<br>
-　　PM/SA：把客戶/老闆的需求轉換成程式架構的技能，專業與謙卑受教。</p> -->
-                <!-- <p class="">(4) 預期薪資 <br>
 　　w/y</p> -->
             </div>
 
@@ -175,10 +176,10 @@
             </div>
             <div class="box">
                 <h3 class="title">Experience</h3>
-                <h4 style="font-weight:bold;">HIERO7 禾新數位有限公司<span>【RD部門】資深程式設計師 | Aug 2018 - now </span></h4>
+                <h4 style="font-weight:bold;">HIERO7 禾新數位有限公司<span>【RD Programmer】資深程式設計師 | Aug 2018 - now </span></h4>
 
                 <ul>
-                    <li>尊重保密協定，除商業邏輯須保密外，Open Sources 技術歡迎面談</li>
+                    <li>尊重公司保密協定，除商業邏輯須保密外，Open Sources 技術、Side Projects 歡迎交流分享</li>
                 </ul>
 
                 <h4 style="font-weight:bold;">三立電視股份有限公司<span>【研發中心】程式設計師 | Jun 2017 - Jul 2018 (1y2m)</span></h4>
@@ -241,8 +242,8 @@
             </div>
 
             <!-- <div class="box">
-        <h3 class="title">Get in Touch</h3>
-      </div> -->
+                <h3 class="title">Get in Touch</h3>
+            </div> -->
         </section>
         <footer>
 
