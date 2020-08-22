@@ -6,12 +6,17 @@
     <title>Resume</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="./style.css">
+    <style>
+        span.department {
+            padding-left: 2%;
+        }
+    </style>
 </head>
 
 <body>
     <!-- partial:index.partial.html -->
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic"
+        rel="stylesheet" type="text/css">
     <div class="resume-wrapper">
         <section class="intro">
             <figure class="profile-box">
@@ -36,7 +41,7 @@
                         <script>
                             var from = new Date('2014/06/15 00:00:00').getTime();
                             var now = new Date().getTime();
-                            var seniority = Number.parseFloat((now-from)/1000/86400/365).toFixed(1);
+                            var seniority = Number.parseFloat((now - from) / 1000 / 86400 / 365).toFixed(1);
                             document.querySelector("#seniority").innerHTML = seniority + "  years";
                         </script>
                     </dd>
@@ -47,30 +52,32 @@
                     <li>
                         <a href="https://github.com/JustinHsu0320" class="github" title="github" targer="_blank">
                             <svg viewbox="0 0 512 512">
-                            <path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/>
+                                <path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"
+                                />
                             </svg>
                         </a>
-                        </li>
-                        <li>
+                    </li>
+                    <li>
                         <a href="https://codepen.io/JustinHsu/" class="icon-4 codepen" title="codepen" targer="_blank">
                             <svg viewbox="0 0 512 512">
-                            <path d="M427 201.9c-0.6-4.2-2.9-8-6.4-10.3L264.2 87.3c-4.9-3.3-11.4-3.3-16.3 0L91.4 191.6c-4 2.7-6.5 7.4-6.5 12.2v104.3c0 4.8 2.5 9.6 6.5 12.2l156.4 104.3c4.9 3.3 11.4 3.3 16.3 0L420.6 320.4c4-2.6 6.6-7.4 6.6-12.2V203.9C427.1 203.2 427.1 202.6 427 201.9 427 201.7 427.1 202.6 427 201.9zM270.7 127.1l115.2 76.8 -51.5 34.4 -63.8-42.7V127.1zM241.3 127.1v68.6l-63.8 42.7 -51.5-34.4L241.3 127.1zM114.3 231.4l36.8 24.6 -36.8 24.6V231.4zM241.3 384.9L126.1 308.1l51.5-34.4 63.8 42.6V384.9zM256 290.8l-52-34.8 52-34.8 52 34.8L256 290.8zM270.7 384.9V316.3l63.8-42.6 51.5 34.4L270.7 384.9zM397.7 280.6l-36.8-24.6 36.8-24.6V280.6z"/>
+                                <path d="M427 201.9c-0.6-4.2-2.9-8-6.4-10.3L264.2 87.3c-4.9-3.3-11.4-3.3-16.3 0L91.4 191.6c-4 2.7-6.5 7.4-6.5 12.2v104.3c0 4.8 2.5 9.6 6.5 12.2l156.4 104.3c4.9 3.3 11.4 3.3 16.3 0L420.6 320.4c4-2.6 6.6-7.4 6.6-12.2V203.9C427.1 203.2 427.1 202.6 427 201.9 427 201.7 427.1 202.6 427 201.9zM270.7 127.1l115.2 76.8 -51.5 34.4 -63.8-42.7V127.1zM241.3 127.1v68.6l-63.8 42.7 -51.5-34.4L241.3 127.1zM114.3 231.4l36.8 24.6 -36.8 24.6V231.4zM241.3 384.9L126.1 308.1l51.5-34.4 63.8 42.6V384.9zM256 290.8l-52-34.8 52-34.8 52 34.8L256 290.8zM270.7 384.9V316.3l63.8-42.6 51.5 34.4L270.7 384.9zM397.7 280.6l-36.8-24.6 36.8-24.6V280.6z"
+                                />
                             </svg>
                         </a>
                     </li>
                     <li>
                         <a href="https://www.facebook.com/howareu520" class="icon-17 facebook" title="facebook">
-                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                            viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                            <g>
-                            <g>
-                                <path d="M452,0H60C26.916,0,0,26.916,0,60v392c0,33.084,26.916,60,60,60h392c33.084,0,60-26.916,60-60V60
-                                C512,26.916,485.084,0,452,0z M472,452c0,11.028-8.972,20-20,20H338V309h61.79L410,247h-72v-43c0-16.975,13.025-30,30-30h41v-62
-                                h-41c-50.923,0-91.978,41.25-91.978,92.174V247H216v62h60.022v163H60c-11.028,0-20-8.972-20-20V60c0-11.028,8.972-20,20-20h392
-                                c11.028,0,20,8.972,20,20V452z"/>
-                            </g>
-                            </g>
-                        </svg>
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <path d="M452,0H60C26.916,0,0,26.916,0,60v392c0,33.084,26.916,60,60,60h392c33.084,0,60-26.916,60-60V60
+                                    C512,26.916,485.084,0,452,0z M472,452c0,11.028-8.972,20-20,20H338V309h61.79L410,247h-72v-43c0-16.975,13.025-30,30-30h41v-62
+                                    h-41c-50.923,0-91.978,41.25-91.978,92.174V247H216v62h60.022v163H60c-11.028,0-20-8.972-20-20V60c0-11.028,8.972-20,20-20h392
+                                    c11.028,0,20,8.972,20,20V452z" />
+                                    </g>
+                                </g>
+                            </svg>
                         </a>
                     </li>
                 </ul>
@@ -80,86 +87,208 @@
                 <div class="skills">
                     <h4>DevOps</h4>
                     <ul>
-                        <li><span class="fill seven"></span><b>Docker (Machine, Compose)</b></li>
-                        <li><span class="fill five"></span><b>Kubernetes 1.13</b></li>
-                        <li><span class="fill seven"></span><b>Drone CICD 1.0</b></li>
-                        <li><span class="fill five"></span><b>AWS (Route53 > CloudFront > (ELB > EC2 || S3)、APIGateway)</b></li>
-                        <li><span class="fill five"></span><b>Heroku, Digital Ocean</b></li>
-                        <li><span class="fill seven"></span><b>Microservices</b></li>
-                        <li><span class="fill seven"></span><b>Kong (API Gateway)</b></li>
-                        <li><span class="fill three"></span><b>ELK</b></li>
-                        <li><span class="fill seven"></span><b>Linux (CentOS, Ubuntu)</b></li>
-                        <li><span class="fill five"></span><b>Nginx, Apache</b></li>
+                        <li>
+                            <span class="fill seven"></span>
+                            <b>Docker (Machine, Compose)</b>
+                        </li>
+                        <li>
+                            <span class="fill five"></span>
+                            <b>Kubernetes 1.13</b>
+                        </li>
+                        <li>
+                            <span class="fill seven"></span>
+                            <b>Drone CICD 1.0</b>
+                        </li>
+                        <li>
+                            <span class="fill five"></span>
+                            <b>AWS (Route53 > CloudFront > (ELB > EC2 || S3)、APIGateway)</b>
+                        </li>
+                        <li>
+                            <span class="fill five"></span>
+                            <b>Heroku, Digital Ocean</b>
+                        </li>
+                        <li>
+                            <span class="fill seven"></span>
+                            <b>Microservices</b>
+                        </li>
+                        <li>
+                            <span class="fill seven"></span>
+                            <b>Kong (API Gateway)</b>
+                        </li>
+                        <li>
+                            <span class="fill three"></span>
+                            <b>ELK</b>
+                        </li>
+                        <li>
+                            <span class="fill seven"></span>
+                            <b>Linux (Ubuntu)</b>
+                        </li>
+                        <li>
+                            <span class="fill seven"></span>
+                            <b>Nginx (Reverse Proxy, Load Balance)</b>
+                        </li>
+                        <li>
+                            <span class="fill seven"></span>
+                            <b>PM2, Supervisor</b>
+                        </li>
                     </ul>
                     <br>
                     <h4>Backend</h4>
                     <ul>
-                        <li><span class="fill seven"></span><b>Golang 1.13 (Gin, Go-Micro)</b></li>
-                        <li><span class="fill nine"></span><b>PHP 7.2 (Laravel 5.2~6.2)</b></li>
-                        <li><span class="fill seven"></span><b>Node.js (Express.js, koa.js)</b></li>
-                        <li><span class="fill three"></span><b>Python 3.6</b></li>
-                        <li><span class="fill nine"></span><b>Restful API</b></li>
-                        <li><span class="fill five"></span><b>GraphQL</b></li>
-                        <li><span class="fill seven"></span><b>MySQL 5.7</b></li>
-                        <li><span class="fill seven"></span><b>ORM (gorm, eloquent, sequelize.js)</b></li>
-                        <li><span class="fill five"></span><b>MongoDB</b></li>
-                        <li><span class="fill five"></span><b>ODM (Mongoose)</b></li>
-                        <li><span class="fill seven"></span><b>Firebase (Databases, Authentication)</b></li>
-                        <li><span class="fill seven"></span><b>Redis</b></li>
-                        <li><span class="fill seven"></span><b>Testing (PHPUnit)</b></li>
+                        <li>
+                            <span class="fill seven"></span>
+                            <b>Golang 1.13 (Gin, Go-Micro)</b>
+                        </li>
+                        <li>
+                            <span class="fill nine"></span>
+                            <b>PHP 7 (Laravel 5.2~7.0)</b>
+                        </li>
+                        <li>
+                            <span class="fill seven"></span>
+                            <b>Node.js (Express.js, koa.js)</b>
+                        </li>
+                        <li>
+                            <span class="fill three"></span>
+                            <b>Python 3.6</b>
+                        </li>
+                        <li>
+                            <span class="fill nine"></span>
+                            <b>Restful API</b>
+                        </li>
+                        <li>
+                            <span class="fill three"></span>
+                            <b>GraphQL</b>
+                        </li>
+                        <li>
+                            <span class="fill seven"></span>
+                            <b>MySQL 5.7</b>
+                        </li>
+                        <li>
+                            <span class="fill seven"></span>
+                            <b>ORM (gorm, eloquent, sequelize.js)</b>
+                        </li>
+                        <li>
+                            <span class="fill five"></span>
+                            <b>MongoDB</b>
+                        </li>
+                        <li>
+                            <span class="fill five"></span>
+                            <b>ODM (Mongoose)</b>
+                        </li>
+                        <li>
+                            <span class="fill seven"></span>
+                            <b>Firebase (Databases, Authentication)</b>
+                        </li>
+                        <li>
+                            <span class="fill seven"></span>
+                            <b>Redis</b>
+                        </li>
+                        <li>
+                            <span class="fill seven"></span>
+                            <b>Testing (PHPUnit)</b>
+                        </li>
                     </ul>
                     <br>
                     <h4>Frontend</h4>
                     <ul>
-                        <li><span class="fill seven"></span><b>Javascript (es6+)</b></li>
-                        <li><span class="fill seven"></span><b>Vue.js 3.0, Nuxt.js</b></li>
-                        <li><span class="fill five"></span><b>Angular.js 1.6</b></li>
-                        <li><span class="fill seven"></span><b>jQuery</b></li>
-                        <li><span class="fill seven"></span><b>Vuetify, Bootstrap 3</b></li>
-                        <li><span class="fill seven"></span><b>HTML5 (Pug)</b></li>
-                        <li><span class="fill three"></span><b>CSS3 (Sass, Scss)</b></li>
+                        <li>
+                            <span class="fill seven"></span>
+                            <b>Javascript (es6+)</b>
+                        </li>
+                        <li>
+                            <span class="fill seven"></span>
+                            <b>Vue.js 3.0, Nuxt.js</b>
+                        </li>
+                        <li>
+                            <span class="fill five"></span>
+                            <b>Angular.js 1.6</b>
+                        </li>
+                        <li>
+                            <span class="fill seven"></span>
+                            <b>jQuery</b>
+                        </li>
+                        <li>
+                            <span class="fill seven"></span>
+                            <b>Vuetify, Bootstrap 3</b>
+                        </li>
+                        <li>
+                            <span class="fill seven"></span>
+                            <b>HTML5 (Pug)</b>
+                        </li>
+                        <li>
+                            <span class="fill three"></span>
+                            <b>CSS3 (Sass, Scss)</b>
+                        </li>
                     </ul>
                     <br>
                     <h4>PM</h4>
                     <ul>
-                        <li><span class="fill nine"></span><b>怡佳娛樂 - 第二屆華流之星 (2018/03-04)</b></li>
-                        <li><span class="fill nine"></span><b>三立華劇 - 尋找我的華劇情人 (2017/09-10)</b></li>
-                        <li><span class="fill nine"></span><b>慈濟大愛 - 療癒果實Web-App (2016/09-12)</b></li>
-                        <li><span class="fill nine"></span><b>私立再興中學 - 再興生活Web-App (2016/05-08)</b></li>
-                        <li><span class="fill nine"></span><b>超人氣娛樂 - 台灣達人秀 (2015/09-2016/04)</b></li>
+                        <li>
+                            <span class="fill nine"></span>
+                            <b>Enjoy Entertainment 怡佳娛樂 - 第二屆華流之星 (2018/03-04)</b>
+                        </li>
+                        <li>
+                            <span class="fill nine"></span>
+                            <b>Sanlih 三立華劇 - 尋找我的華劇情人 (2017/09-10)</b>
+                        </li>
+                        <li>
+                            <span class="fill nine"></span>
+                            <b>Tzu Chi 慈濟大愛 - 療癒果實 (2016/09-12)</b>
+                        </li>
+                        <li>
+                            <span class="fill nine"></span>
+                            <b>Tsai Hsing Senior High School 再興中學 - 再興生活 (2016/05-08)</b>
+                        </li>
+                        <li>
+                            <span class="fill nine"></span>
+                            <b>SUPER MEDIA 超人氣娛樂 - 台灣達人秀 (2015/09-2016/04)</b>
+                        </li>
                     </ul>
                     <br>
                     <h4>Tools</h4>
                     <ul>
-                        <li><span class="fill seven"></span><b>Agile Scrum</b></li>
-                        <li><span class="fill five"></span><b>Jira</b></li>
-                        <li><span class="fill seven"></span><b>Git</b></li>
-                        <li><span class="fill seven"></span><b>Postman</b></li>
-                        <li><span class="fill seven"></span><b>VSCode</b></li>
+                        <li>
+                            <span class="fill seven"></span>
+                            <b>Agile Scrum</b>
+                        </li>
+                        <li>
+                            <span class="fill five"></span>
+                            <b>Jira</b>
+                        </li>
+                        <li>
+                            <span class="fill seven"></span>
+                            <b>Git</b>
+                        </li>
+                        <li>
+                            <span class="fill seven"></span>
+                            <b>Postman</b>
+                        </li>
+                        <li>
+                            <span class="fill seven"></span>
+                            <b>VSCode</b>
+                        </li>
                     </ul>
                 </div>
             </div>
-
             <div class="word-box">
                 <!--         <p class="">▍Q&A：</p>
-<p class="">(1) 預期公司文化<br>
-　　把員工當夥伴關係，全力以赴貢獻所學，擁有內部交流與自主學習時間、重視工作與生活、得以永續替公司製造價值與過程獲得成就感，與公司、夥伴們共同成長。
-</p>
-<p class="">(2) 棘手的工作經驗及解決方式<br style="margin-top: 8px;">
-　　發現deploy Laravel5.4至Server時, Nginx(rewrite)傳送URI給Laravel Route(Api/Web)出現mismatch。(因開發時URI是根目錄開發, 但deploy是Subdirectory)
-    研究20分鐘後未果，立馬回報組長 未解決> 回報經理 未解決> 回報副總，最後在多方會商下嘗試與成功！ (下次打算使用Laravel Homestead處理)
-    很珍惜這個過程，大家都無私的把自己已知的貢獻出來討論，不分你我、不分階級，共同為一件事情團結一心。
-</p>
-<p class="">(3) 短中期目標 <br>
-　　Backend：資料庫語法效能調校<br>
-　　Cloud：AWS/GCP雲端服務的了解比較與應用、伺服器讀寫架構規畫<br>
-　　Server：Linux系統調校<br>
-　　Frontend：已熟悉Vue.js(較似前端Library)且自主學習Nuxt.js框架, 借以Node.js整合全端與適應SSR(Universal APP)<br>
-　　PM/SA：把客戶/老闆的需求轉換成程式架構的技能，專業與謙卑受教。</p> -->
+                <p class="">(1) 預期公司文化<br>
+                　　把員工當夥伴關係，全力以赴貢獻所學，擁有內部交流與自主學習時間、重視工作與生活、得以永續替公司製造價值與過程獲得成就感，與公司、夥伴們共同成長。
+                </p>
+                <p class="">(2) 棘手的工作經驗及解決方式<br style="margin-top: 8px;">
+                　　發現deploy Laravel5.4至Server時, Nginx(rewrite)傳送URI給Laravel Route(Api/Web)出現mismatch。(因開發時URI是根目錄開發, 但deploy是Subdirectory)
+                    研究20分鐘後未果，立馬回報組長 未解決> 回報經理 未解決> 回報副總，最後在多方會商下嘗試與成功！ (下次打算使用Laravel Homestead處理)
+                    很珍惜這個過程，大家都無私的把自己已知的貢獻出來討論，不分你我、不分階級，共同為一件事情團結一心。
+                </p>
+                <p class="">(3) 短中期目標 <br>
+                　　Backend：資料庫語法效能調校<br>
+                　　Cloud：AWS/GCP雲端服務的了解比較與應用、伺服器讀寫架構規畫<br>
+                　　Server：Linux系統調校<br>
+                　　Frontend：已熟悉Vue.js(較似前端Library)且自主學習Nuxt.js框架, 借以Node.js整合全端與適應SSR(Universal APP)<br>
+                　　PM/SA：把客戶/老闆的需求轉換成程式架構的技能，專業與謙卑受教。</p> -->
                 <!-- <p class="">(4) 預期薪資 <br>
-　　w/y</p> -->
+                　　w/y</p> -->
             </div>
-
             <div class="btn-box">
                 <button type="button" name="button" id="print-btn">Print My Resume</button>
             </div>
@@ -170,59 +299,116 @@
             </header>
             <div class="sub-header">
                 <h4 id="type-js">
-                    <em class="text-js">赤誠進取 謙卑受教</em>
+                    <em class="text-js">Nothing is impossible to a willing heart.</em>
                 </h4>
             </div>
             <div class="box">
                 <h3 class="title">Experience</h3>
-                <h4 style="font-weight:bold;">HIERO7 禾新數位有限公司<span>【RD部門】資深程式設計師 | Aug 2018 - now </span></h4>
-
+                <h4 style="font-weight:bold;">✽ 
+                    <a target="_blank" href="https://www.hiero7.com">HIERO7</a>
+                    <span class="department">【RD】Senior Programmer | Aug 2018 - now </span>
+                </h4>
                 <ul>
-                    <li>尊重保密協定，除商業邏輯須保密外，Open Sources 技術歡迎面談</li>
+                    <li>25 Git Repositories of Maintainer</li>
+                    <li>Microservices with Kong, Docker and multiple languages in Services</li>
+                    <li>CICD Implementer</li>
+                    <li>10+ Side Projects in <a target="_blank" href="https://github.com/JustinHsu0320">GitHub</a> </li>
+                    <!-- <li>尊重保密協定，除商業邏輯須保密外，Open Sources 技術歡迎面談</li> -->
                 </ul>
-
-                <h4 style="font-weight:bold;">三立電視股份有限公司<span>【研發中心】程式設計師 | Jun 2017 - Jul 2018 (1y2m)</span></h4>
+                <br>
+                <h4 style="font-weight:bold;">✽ 
+                    <a target="_blank" href="https://www.settv.com.tw/#!/">Sanlih E-Television Inc.</a>
+                    <span class="department">【IT】Programmer | Jun 2017 - Jul 2018 (1y2m)</span>
+                </h4>
                 <ul>
-                    <li>[<a target="_blank" href="http://www.settv.com.tw/#!/">三立電視官網</a>]<br/> <span>前後台開發維護 <b>(Laravel5.2, Angular1.2)</b></span>
+                    <li>
+                        <h5>Sanlih Online Activities: </h5>
+                        <h5>
+                            <a target="_blank" href="http://www.settv.com.tw/#!/">Sanlih Official Website</a>
+                        </h5>
+                        <span>Knowledge:
+                            <b>Laravel5.2, Angular1.2</b>
+                        </span>
                         <br>
-                        <img width="450" src="images/sanlih_xs.png" alt="三立電視官網">
-                    </li>
-                    <li>[三立新聞網活動公版]<br/>如:<a target="_blank" href="http://event.setn.com/fun/2018fifa">2018世足</a> 、 <a target="_blank" href="http://event.setn.com/fun/Xmas2017">2017耶誕跨年交換禮物</a><br/><span>前後台開發維護 <b>(Phalcon, Angular1.6)</b></span>
+                        <img width="450" src="images/sanlih_xs.png" alt="Sanlih Official Website">
+                    </li><br>
+                    <li>
+                        <h5>Sanlih Online Activities: </h5>
+                        <h5>
+                            <a target="_blank" href="http://event.setn.com/fun/2018fifa">2018 FIFA World Cup</a> , 
+                            <a target="_blank" href="http://event.setn.com/fun/Xmas2017">2017 Xmas</a>
+                        </h5>
+                        <span>Knowledge:
+                            <b>Phalcon, Angular1.6</b>
+                        </span>
                         <br>
                         <img width="450" src="images/mtv_event_xs.png" alt="三立新聞網 - 活動公版">
-                    </li>
-                    <li>[<a target="_blank" href="http://www.mtv.com.tw/">MTV</a>]<br/><span>前後台開發維護 <b>(原生PHP OO)</b></span>
+                    </li><br>
+                    <li>
+                        <h5>
+                            <a target="_blank" href="http://www.mtv.com.tw/">MTV Official Website</a>
+                        </h5>
+                        <span>Knowledge:
+                            <b>PHP OOP</b>
+                        </span>
                         <br>
-                        <img width="450" src="images/mtv_xs.png" alt="MTV官網">
-                    </li>
-                    <li>[<a target="_blank" href="http://www.mtv.com.tw/event/2018/2018STC/index-template-justin.php">MTV活動頁</a>]<br/><span> <b>(Laravel5.4, Vue2.5.16 兼容 Microsoft Edge, IE10-11)</b></span></li>
-                    <li>[三立華劇 - 活動網站] <br/><a target="_blank" href="https://www.facebook.com/setdrama/posts/10155084603466270">尋找我的華劇情人 (活動結束即下架)</a><br/><b>兼任PM (Laravel5.4, Vue Cli 2.4.4)</b><br>
-                        <img width="450" src="images/spoplover.jpg" alt="尋找我的華劇情人"></li>
-                    <li>[三立新聞APP - 集點活動 - 測試環境 - 密碼：sanlihAppTeam] <br/><a target="_blank" href="http://52.193.68.198/points_test/">管理後台</a> <b>(Firebase sdk, Vue2.5.3)</b><br>
+                        <img width="450" src="images/mtv_xs.png" alt="MTV Official Website">
+                    </li><br>
+                    <li>
+                        <h5>
+                            <a target="_blank" href="http://www.mtv.com.tw/event/2018/2018STC/index-template-justin.php">MTV Online Activities</a>
+                        </h5>
+                        <span>Knowledge:
+                            <b>Laravel5.4, Vue2.5</b>
+                        </span>
+                    </li><br>
+                    <li>
+                        <h5>MTV Official Website</h5>
+                        <h5>
+                            <a target="_blank" href="https://www.facebook.com/setdrama/posts/10155084603466270">"尋找我的華劇情人"</a> (Website offline after duration)
+                        </h5>
+                        <span>Knowledge:
+                            <b>Laravel5.4, Vue2.4</b>
+                        </span>
+                        <br>
+                        <img width="450" src="images/spoplover.jpg" alt="尋找我的華劇情人">
+                    </li><br>
+                    <li>
+                        <h5>Sanlih News Online Activities</h5>
+                        <span>
+                            Knowledge:
+                            <b>Firebase SDK, Vue2.5</b>
+                        </span>
+                        <br>
                         <img width="750" src="images/points.png" alt="三立新聞APP - 集點活動 - 正式環境">
                     </li>
-                    <li>[怡佳娛樂-報名公版] <br/><a target="_blank" href="http://event.setn.com/2018topstar/">第二屆華流之星</a> & <a target="_blank" href="https://codepen.io/JustinHsu/pen/VXxOVW">管理後台</a>(初步codepen溝通用, 個資保護見諒不開放正式環境) <br/> <b>兼任PM (Laravel5.4, Vue2.5.10)</b><br>
-                        <img width="750" src="images/2018topstar_backend.jpg" alt="怡佳娛樂 - 管理後台">
-                    </li>
-                    <li>三立新聞APP/推播 Restful Api, 不便公開之內部管理系統 等</li>
-                    <li>[Side Project] - <b>Nuxt.js</b> <br/><a target="_blank" href="https://github.com/JustinHsu0320/sideProject_NuxtJS">Github</a></li>
-                    <li>[Side Project] - <b>Node.js(express) + mongoDB(Mongoose)</b> <br/><a target="_blank" href="https://github.com/JustinHsu0320/sideProject_nodeExpress_mongodbMongoose">Github</a></li>
-                    <li>[Side Project] - <b>Socket.io Frontend (host by Node Server)</b> <br/><a target="_blank" href="https://codepen.io/JustinHsu/pen/JvgWEV">Codepen</a></li>
                 </ul>
-                <h4>歐特雲有限公司<span>助理全端工程師 & PM | Jun 2014 - Jun 2017 (3 years)</span></h4>
+                <br>
+                <h4>✽ 
+                    <a target="_blank" href="https://www.oort.com.tw">Oort Cloud Ltd.</a>
+                    <span>Full Stack Assistant & Project Manager | Jun 2014 - Jun 2017 (3 years)</span>
+                </h4>
                 <ul>
-                    <li>[訂房網] 自遊配(34張資料表) 負責:管理後台 <b> (CodeIgniter)</b></li>
-                    <li>[人力媒合網] (受保密合約保護) <b> (Slim3)</b></li>
-                    <li>[影音網] <a target="_blank" href="http://hope.daai.life/">慈濟大愛-療癒果實Web App</a> 前後台 <a target="_blank" href="https://play.google.com/store/apps/details?id=life.daai.healingfruit&hl=zh_TW">Android上架</a> (16張資料表, SPA) <b> 兼任PM</b></li>
-                    <li>[運動裝置行銷] <a target="_blank" href="http://www.arofly.com.tw/arofly/public/index">AROFLY</a></li>
-                    <li>[再興中學] 再興生活Web-App 前後台<a target="_blank" href="https://itunes.apple.com/tw/app/%E5%86%8D%E8%88%88%E7%94%9F%E6%B4%BBapp/id1057268350?mt=8">iOS</a> <a target="_blank" href="https://androidappsapk.co/detail-%E5%86%8D%E8%88%88%E7%94%9F%E6%B4%BBapp/">Android</a>                        <b> 兼任PM</b></li>
-                    <li>[龐式騙局網] (因法令下架) (23張資料表)<b> 會員(獎金抽成)</b>
+                    <li>Video Website
+                        <a target="_blank" href="http://hope.daai.life/">Tzu Chi Culture and Communication Foundation - Web App</a> & Backend control panel
+                        <a target="_blank" href="https://play.google.com/store/apps/details?id=life.daai.healingfruit&hl=zh_TW">Google Play - Android</a>
+                        <b> as a Developer & PM</b>
                     </li>
-                    <li>[論壇網] 發文會員之獎金、紅利、升級條件 (62張資料表) <a target="_blank" href="http://www.ggyyggy.com/funbook19/v_index.php">funbook19</a><b> MySQL關聯</b>
+                    <li>Marketing Website
+                        <a target="_blank" href="http://www.arofly.com.tw/arofly/public/index">AROFLY</a>
+                    </li>
+                    <li>Taipei Private Tsai Hsing Senior High School - Web App & Backend control panel
+                        <a target="_blank" href="https://itunes.apple.com/tw/app/%E5%86%8D%E8%88%88%E7%94%9F%E6%B4%BBapp/id1057268350?mt=8">iOS</a>
+                        <a target="_blank" href="https://androidappsapk.co/detail-%E5%86%8D%E8%88%88%E7%94%9F%E6%B4%BBapp/">Android</a>
+                        <b> as a Developer & PM</b>
+                    </li>
+                    <li>Forum Website
+                        <a target="_blank" href="http://www.ggyyggy.com/funbook19/v_index.php">funbook19</a>
+                        <b> MySQL Join</b>
                         <br>
                         <img width="750" src="images/funbook_sql.png" alt="">
                     </li>
-                    <li>[金流]綠界金流ECPAY▼、歐付寶ALLPAY、PEPAY
+                    <li>FinTech: ECPAY▼ , ALLPAY , PEPAY
                         <br>
                         <img width="500" src="images/ecpay.png" alt="">
                     </li>
@@ -230,29 +416,26 @@
             </div>
             <div class="box">
                 <h3 class="title">Education</h3>
-                <h4>Bachelor’s Degree <span>(Sep 2008 - Jun 2012)</span></h4>
-                <p>College of commerce, Major in Accounting, TungHai University</p>
+                <h4>Bachelor’s Degree</h4>
+                <h4>College of commerce, Major in Accounting, TungHai University (Sep 2008 - Jun 2012)</h4>
             </div>
-
             <div class="box">
                 <h3 class="title">Certification</h3>
-                <h4>AWS <span>(Nov 21 2017)</span></h4>
+                <h4>AWS
+                    <span>(Nov 21 2017)</span>
+                </h4>
                 <img width="500" src="images/AWS_training.jpg" alt="">
             </div>
-
             <!-- <div class="box">
-        <h3 class="title">Get in Touch</h3>
-      </div> -->
+            <h3 class="title">Get in Touch</h3>
+            </div> -->
         </section>
         <footer>
-
         </footer>
     </div>
-
     <!-- partial -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
     <script src="./script.js"></script>
-
 </body>
 
 </html>
